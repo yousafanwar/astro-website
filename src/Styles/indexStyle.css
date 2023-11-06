@@ -1,0 +1,8 @@
+/* styles.css */
+.background-container {
+  background-image: url('../components/Images/Cover Image.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+

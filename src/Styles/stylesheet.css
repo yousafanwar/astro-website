@@ -1,0 +1,379 @@
+.nav-custom{
+    background-color: #151e3d;
+    color: white;
+}
+
+.parallax {
+  background-image: url('Cover Image.png');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  
+}
+
+.parallax .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content {
+  padding: 20px;
+}
+
+.cover-img h1{
+  font-family: lastica;
+  font-size: 4rem;
+  margin-top: 250px;
+  margin-left: -15px;
+  text-align: start;
+  color: #f8f9fa;  
+}
+
+.cover-img p{
+  font-family: lastica;
+  font-size: 1.5rem;
+  margin-left: -15px;
+  color: #ddd;
+  text-align: start;
+}
+
+
+.section-margin-top{
+  margin-top: 45px;
+}
+
+.sec-4-text{
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.sec-4-text-fadeIn{
+  opacity: 1;
+  transition: ease 1s;
+  /* transition: ease opacity 100% 2s; */
+}
+
+
+
+.sec--3--cont-col-4{
+    height: 18rem;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+    padding-bottom: 10px;
+    /* border-radius: 5px; */
+    /* border: 1px solid #ccc; */
+    margin: 20px;        
+}
+
+/* CSS for card flip animation */
+.card-flip {
+  position: relative;
+  width: 100%;
+  height: 18rem;
+  perspective: 1000px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+  /* margin-top: 200px; */
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+  
+}
+
+.card-front {
+  background-color: #151e3d;
+  color: white;
+  padding-top: 120px;
+  text-align: center;
+  
+}
+
+.card-back {
+  /* background-color: #e74c3c; */
+  /* color: brown; */
+  transform: rotateY(180deg);
+}
+
+.card-flip:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-flip:hover .card-back{
+  transform: rotateY(0deg);
+  
+}
+
+.car-item-cus{
+  width: 150px;
+  margin-left: 550px;
+ 
+}
+
+.carousal-slide-cus{
+  background-color: #151e3d;
+  color: #ccc;
+  height: 22rem;
+}
+
+.carousal-slide-blockq{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+
+/* This the default css for all the associate pages */
+.service-sec1{
+  margin-top: 90px;
+  height: 500px;
+  /* padding-top: 300px; */
+  background-color: #1c1235;
+  color: white;
+  max-width: 100%;
+}
+
+/* .index-sec2{
+
+} */
+
+.index-sec2-slideIn{
+  transform: translateX(0);
+  transition: ease 1.5s;
+}
+
+.index-sec2-slideOut{
+  transform: translateX(-100%);
+  transition: transform 1.5s;
+}
+
+.index-sec2-text-slideDown{
+  transform: translateY(100%);
+  transition: transform 1.5s;
+
+}
+
+.index-sec2-text-slideUp{
+  transform: translateY(0);
+  transition: ease 1.5s;
+}
+
+
+
+
+/* Contact us Page Css */
+
+.contactUs-form{
+  /* position: flex; */
+  background-color: #21172b;
+  /* margin-left: 700px; */
+  margin-top: 50px;
+  /* padding-left: 700px; */
+  max-width: 40%;
+  /* height: 200px; */
+  /* width: 55%; */
+  
+   
+}
+
+.form-group{
+  padding-bottom: 5px;
+}
+
+.contact-us-title{
+  margin-top: 380px;
+}
+
+.contactUs-sec2{
+  margin-top: 50px;
+}
+
+.contactUs-sec2-text{
+  padding: 20px;
+  text-align: center;
+}
+
+.contactUs-sec2-img{
+  height: 200px;
+  background-color: #1c1235;
+}
+
+.contactUs-sec2-img img{
+  padding-top: 15px;
+  padding-left: 155px;
+}
+
+.contactUs-sec2-img blockquote{
+  color: silver;
+  text-align: center;
+  padding-top: 10%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ABOUT US CSS */
+
+.aboutUs-sec1{
+  margin-top: 90px;
+  height: 500px;
+  padding-top: 300px;
+  background-color: #1c1235;
+  color: white;
+  max-width: 100%;
+}
+
+.aboutUs-sec2{
+  margin-top: 20px;
+  /* height: 400px; */
+  margin-left: 5px;
+  /* margin-bottom: 150px;  */
+}
+
+.aboutUs-sec2 h2{
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.aboutUs-sec2 blockquote{
+  /* display: none; */
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.slide-in{
+  transform: translateX(0);
+  transition: ease 2s;
+}
+
+.slide-out{
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+/* SERVICES PAGE ACCORDIAN */
+
+/* Styling the accordion container */
+.accordion {
+  margin-top: 20px;
+}
+
+/* Styling the accordion buttons */
+.accordion-button {
+  background-color: #352966 ;
+  color: #fff;
+}
+
+/* Styling the accordion button when expanded */
+.accordion-button:not(.collapsed) {
+  background-color: #1c1235;
+}
+
+/* Styling the accordion body */
+.accordion-body {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-top: 0;
+  padding: 10px;
+}
+
+/* Styling the accordion body text */
+.accordion-body p {
+  margin-bottom: 0;
+}
+
+/* Adding some padding to the entire accordion section */
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+/* Styling the accordion header (optional) */
+.accordion-header {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-top: 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/* Styling the accordion header text (optional) */
+.accordion-header button {
+  color: #333;
+}
+
+/* Styling the active accordion header (optional) */
+.accordion-header:not(.collapsed) {
+  background-color: #ddd;
+}
+
+/* Styling the active accordion header text (optional) */
+.accordion-header:not(.collapsed) button {
+  color: white;
+}
+
+
+.slideOut{
+  transform: translateX(-100%);
+  transition: transform 0.5;
+}
+
+.slideIn{
+  transform: translateX(0);
+  transition: ease 2s;
+}
+
+.slideOut-right{
+  transform: translateX(100%);
+  transition: transform 0.5;
+}
+
+.slideIn-right{
+  transform: translateX(0);
+  transition: ease 2s;
+}
+
+.services-top-grid{
+  margin: 10px;
+  /* height: 200px; */
+  /* border: solid black; */
+  /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5); */
+
+}
+
+.services-top-grid:hover{
+  /* margin: 10px; */
+  /* height: 200px; */
+  /* border: solid black; */
+  /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5); */
+  /* transform: translateY(5%); */
+  
+  box-shadow: 10px 10px 5px 0px #2B3464;
+  transition: box-shadow 0.5s ease;
+  transform: translateY(-5%);
+  transition: transform 0.5s;
+  
+}
+
+.icon-cus{
+  font-size:40px;
+}
+
+/* Never Implemented
+.icon-cus-hover{
+  transform: translateY(-15%);
+  transition: transform 0.5s;
+  font-size:45px;
+} */
+
+
