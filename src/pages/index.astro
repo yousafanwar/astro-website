@@ -2,26 +2,259 @@
 import '../Styles/stylesheet.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import Layout from "../layouts/Layout.astro";
-import backgroundImage from '../components/Images/Cover Image.png';
-// import './indexStyle.css'; // Import your external CSS file
+// import backgroundImage from '../components/Images/Cover Image.png';
 import '../Styles/indexStyle.css';
+import image2 from '../components/Images/image-2.jpg';
+import image3 from '../components/Images/image--3.jpg';
 ---
 
 <Layout title="index">
 	<!-- <h1>Hello World</h1> -->
-	<div class="content background-container">
-		<div class="row justify-content-start align-items-start g-2 cover-img">
-		  <div class="col-sm-8 ">
-		  <h1 >FATIMA MARKETING</h1>
-		  </div>
-		  <div class="col-sm-12">
-		  <p > Igniting Growth, Maximizing Reach</p>
+
+
+    <!-- SECTION # 01 -->
+    <section class="section--1">
+		<div class="parallax">
+		  <div class="container">
+		<!-- <picture>
+		  <source srcset="Fatima marketing.svg" type="image/svg+xml">
+		  <img src="Fatima marketing.svg" class="img-fluid" alt="image desc">
+		  </picture> -->
+		  <div class="content">
+			  <div class="row justify-content-start align-items-start g-2 cover-img">
+				<div class="col-sm-8 ">
+				<h1 >FATIMA MARKETING</h1>
+				</div>
+				<div class="col-sm-12">
+				<p > Igniting Growth, Maximizing Reach</p>
+				</div>
+			  </div>
 		  </div>
 		</div>
-	</div>
-  </div>
-</div>
-</section>
+	  </div>
+	  </section>
+  
+
+
+
+
+<!-- SECTION 2 -->
+<section class="section-margin-top">
+	<div class="container">
+	  <div class="row index-sec2">
+		<div class="col-sm-4">
+		  <picture>
+			<source srcset={image2.src} type="image/svg+xml">
+			<img src={image2.src} class="img-fluid index-sec2-slideOut testId" alt="image desc">
+			</picture>
+		</div>
+		<div class="col-sm-4 mx-auto index-sec2-text-slideDown testId" style="text-align: center; margin-left: 30px; margin-top: 20px;">
+		  <h5>Unlock Online Success</h5>
+		  <p>Maximize Your Business's Potential</p>
+		  <p>Elevate your business ROI to new heights with our exceptional suite of digital marketing solutions, including Search Engine Optimization (SEO), Paid Advertising Campaigns, and Social Media Management. Our comprehensive services are meticulously designed to position your business prominently across search engines and various digital platforms.</p>
+		  <p>Prepare to <span class="highlight">conquer the realm of Digital Marketing</span> with our diverse array of offerings. Your online success story starts here.</p>
+
+		  
+		  <button type="button" class="btn btn-outline-dark">Learn More</button>
+		  
+		</div>
+		</div>
+		
+	  </div>
+	</div>      
+  </section>
+
+      <!-- THIS IS SECTION # 03 -->
+	  <section class="section-margin-top">
+        <div class="container">
+          <h2>Digital Marketing Services</h2>
+          <div class="row justify-content-center align-items-center g-2">
+            <div class="col-sm-3 sec--3--cont-col-4 mx">
+              <div class="card card-flip">
+                <div class="card-inner card-front">
+                  <h5>Search Engine Optimization</h5>
+                </div>
+                <div class="card-inner card-back">
+                  <blockquote >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat nisl vitae magna elementum, hendrerit volutpat nibh maximus. Duis lacinia efficitur lacinia. Pellentesque id interdum eros. Sed dignissim lacus dolor, ac cursus nulla condimentum eu. Vestibulum ut justo et tellus feugiat sagittis.
+                  </blockquote >
+                  <div class="d-grid">
+                    <button type="button" class="btn btn-outline-dark">Learn More</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-sm-3 sec--3--cont-col-4">
+              <div class="card card-flip">
+                <div class="card-inner card-front">
+                <h5>Email Marketing</h5>
+              </div>
+              <div class="card-inner card-back">
+              <blockquote >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat nisl vitae magna elementum, hendrerit volutpat nibh maximus. Duis lacinia efficitur lacinia. Pellentesque id interdum eros. Sed dignissim lacus dolor, ac cursus nulla condimentum eu. Vestibulum ut justo et tellus feugiat sagittis.
+              </blockquote >
+              <div class="d-grid">
+                <button type="button" class="btn btn-outline-dark">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-sm-3 sec--3--cont-col-4">
+              <div class="card card-flip">
+                <div class="card-inner card-front">
+                  <h5>Web Development</h5>
+                </div>
+              <div class="card-inner card-back">
+                <blockquote >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat nisl vitae magna elementum, hendrerit volutpat nibh maximus. Duis lacinia efficitur lacinia. Pellentesque id interdum eros. Sed dignissim lacus dolor, ac cursus nulla condimentum eu. Vestibulum ut justo et tellus feugiat sagittis.
+                </blockquote >
+                <div class="d-grid">
+                  <button type="button" class="btn btn-outline-dark">Learn More</button>
+                </div>
+              </div>  
+            </div>
+          </div>
+            
+            
+            <div class="col-sm-3 sec--3--cont-col-4">
+              <div class="card card-flip">
+                <div class="card-inner card-front">
+                <h5>Social Media Marketing</h5>
+              </div>
+              <div class="card-inner card-back">
+                <blockquote >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat nisl vitae magna elementum, hendrerit volutpat nibh maximus. Duis lacinia efficitur lacinia. Pellentesque id interdum eros. Sed dignissim lacus dolor, ac cursus nulla condimentum eu. Vestibulum ut justo et tellus feugiat sagittis.
+                </blockquote >
+                <div class="d-grid">
+                  <button type="button" class="btn btn-outline-dark">Learn More</button>
+                </div>
+            </div>
+            </div>
+            </div>
+            
+            <div class="col-sm-3 sec--3--cont-col-4">
+              <div class="card card-flip">
+                <div class="card-inner card-front">
+                  <h5>Youtube Marketing</h5>
+                </div>  
+                <div class="card-inner card-back">
+              <blockquote >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat nisl vitae magna elementum, hendrerit volutpat nibh maximus. Duis lacinia efficitur lacinia. Pellentesque id interdum eros. Sed dignissim lacus dolor, ac cursus nulla condimentum eu. Vestibulum ut justo et tellus feugiat sagittis.
+              </blockquote >
+              <div class="d-grid">
+                <button type="button" class="btn btn-outline-dark">Learn More</button>
+              </div>            
+            </div>
+            </div>
+            </div>
+            
+            <div class="col-sm-3 sec--3--cont-col-4">
+              <div class="card card-flip">
+                <div class="card-inner card-front">
+                  <h5 class="card-front-text">Paid Ads</h5>
+                </div>
+                <div class="card-inner card-back">
+              <blockquote >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat nisl vitae magna elementum, hendrerit volutpat nibh maximus. Duis lacinia efficitur lacinia. Pellentesque id interdum eros. Sed dignissim lacus dolor, ac cursus nulla condimentum eu. Vestibulum ut justo et tellus feugiat sagittis.
+              </blockquote >
+              <div class="d-grid">
+                <button type="button" class="btn btn-outline-dark">Learn More</button>
+                </div>
+              </div>            
+            </div>
+            </div>
+            </div>
+
+        </div>
+      </div>      
+    </section>
+
+
+    <!-- SECTION # 4 -->
+
+    <section class="section-margin-top">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-sm-4 mx-auto sec-4-text" style="text-align: center; margin-left: 30px; margin-top: 20px;">
+            <h2>Claim Your Free Website Audit Today!</h2>
+            <p>Maximize Your Business's Potential</p>
+            <p>Elevate your business ROI to new heights with our exceptional suite of digital marketing solutions, including Search Engine Optimization (SEO), Paid Advertising Campaigns, and Social Media Management. Our comprehensive services are meticulously designed to position your business prominently across search engines and various digital platforms.</p>
+            <p>Prepare to <span class="highlight">conquer the realm of Digital Marketing</span> with our diverse array of offerings. Your online success story starts here.</p>
+            <button type="button" class="btn btn-outline-dark">Learn More</button>
+          </div>
+          
+          <div class="col-sm-4">
+            <picture>
+              <source srcset= {image3.src} type="image/svg+xml">
+              <img src= {image3.src} class="img-fluid" alt="image desc">
+              </picture>
+          </div>
+
+          </div>
+          
+        </div>
+      </div>      
+    </section>
 
 
 </Layout>
+
+<script>
+let target = document.querySelector(".index-sec2");
+let sec2Slide = document.querySelector(".index-sec2-slideOut");
+let sec2Id = document.querySelectorAll(".testId");
+
+
+function intersectionObserveFunc(entries: any){
+    entries.forEach(function(entry: any){
+        if(entry.isIntersecting){
+
+            console.log("Intersection");
+
+            sec2Id.forEach(function(entry){
+
+                if(entry.classList.contains("index-sec2-slideOut")){
+                    entry.classList.remove("index-sec2-slideOut");
+                    entry.classList.add("index-sec2-slideIn");
+                }
+                
+                if(entry.classList.contains("index-sec2-text-slideDown")){
+                    entry.classList.remove("index-sec2-text-slideDown");
+                    entry.classList.add("index-sec2-text-slideUp");                    
+                }
+            })}
+    })}
+let options = {
+    root: null,
+    threshold: 0.5,
+}
+
+let observer = new IntersectionObserver(intersectionObserveFunc, options);
+
+if(target){
+    observer.observe(target);
+}
+
+////////////////////////////////////////////////////////////////////////
+
+let sec4Target = document.querySelector(".sec-4-text");
+let observer1 = new IntersectionObserver(intersectionObserveFunc2, options);
+
+
+function intersectionObserveFunc2(entries: any){
+    entries.forEach(function(entry: any){
+        if(entry.isIntersecting){
+            
+            sec4Target!.classList.remove("sec-4-text");
+            sec4Target!.classList.add(".sec-4-text-fadeIn");   
+        }
+    })
+}
+
+if(sec4Target){
+    observer1.observe(sec4Target);
+}
+
+
+
+
+
+
+</script>

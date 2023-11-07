@@ -4,7 +4,7 @@
 }
 
 .parallax {
-  background-image: url('Cover Image.png');
+  background-image: url('../components/Images/Cover Image.png');
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -97,6 +97,7 @@
   background-color: #151e3d;
   color: white;
   padding-top: 120px;
+  height: 280px;
   text-align: center;
   
 }
