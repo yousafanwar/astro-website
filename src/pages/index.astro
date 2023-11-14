@@ -6,6 +6,8 @@ import Layout from "../layouts/Layout.astro";
 import '../Styles/indexStyle.css';
 import image2 from '../components/Images/image-2.jpg';
 import image3 from '../components/Images/image--3.jpg';
+import Footer from '../layouts/Footer.astro';
+import Slides from '../layouts/Slides.astro';
 ---
 
 <Layout title="index">
@@ -193,8 +195,11 @@ import image3 from '../components/Images/image--3.jpg';
       </div>      
     </section>
 
-
+    
 </Layout>
+
+<Slides />
+<Footer />
 
 <script>
 let target = document.querySelector(".index-sec2");
@@ -238,7 +243,7 @@ let sec4Target = document.querySelector(".sec-4-text");
 let observer1 = new IntersectionObserver(intersectionObserveFunc2, options);
 
 
-function intersectionObserveFunc2(entries: any){
+function intersectionObserveFunc2(entries: any){	
     entries.forEach(function(entry: any){
         if(entry.isIntersecting){
             

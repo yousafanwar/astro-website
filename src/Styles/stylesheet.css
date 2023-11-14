@@ -103,9 +103,7 @@
 }
 
 .card-back {
-  /* background-color: #e74c3c; */
-  /* color: brown; */
-  transform: rotateY(180deg);
+   transform: rotateY(180deg);
 }
 
 .card-flip:hover .card-inner {

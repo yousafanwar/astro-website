@@ -1,0 +1,78 @@
+.footer{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #151e3d;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  .footer h3{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  }
+  
+  .footr-nav-links{
+    list-style: none;
+  }
+  
+  .footer__link:link,
+  .footer__link:visited{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: all 0.5s;
+    line-height: 1.5;
+  }
+  
+  .footer__link:hover{
+    color: gray;
+  }
+  
+  /* .subscribe-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  } */
+  
+  /* button styling 
+  transition: background-color 0.3s ease */
+  
+  /* Style the input and button within the subscribe form */
+  #emailAddress{
+    width: 105%; /* Make the input and button full width */
+    margin-bottom: 10px; /* Add spacing between input and button */
+    padding: 10px; /* Add padding for better appearance */
+    border: solid white; /* Remove default border */
+    border-width: 3px;
+    color: white;
+    background-color: inherit; /* Choose your button background color */
+    transition: 0.2s;
+    }
+  
+  
+  
+  .confirmationMsg{
+    /* padding: 2rem; */
+    text-align: center;
+  }
+  
+  .emailFormatMsg{
+    visibility: hidden;
+    transition: 0.2s;
+    padding-bottom: 5px;
+  }
+  
+  .confirmationMsg{
+    display: none;
+  }
+
+  .sm-3-footr1{
+    border-left: #E5E4E2 solid;
+    margin-right: 5rem;
+    padding-right: 10rem;
+    list-style: none;
+  }

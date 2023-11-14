@@ -1,0 +1,85 @@
+---
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css'
+import { Breadcrumb } from 'astro-bootstrap';
+import '../Styles/footer.css';
+---
+
+<footer class="footer">
+         
+
+    <div class="row">
+        <div class="col sm-3-footr1">
+            <h3>Company</h3>
+            <ul class="footr-nav-links">
+                <li><a class="footer__link" href="About-us.html">About us</a></li>
+                <li><a class="footer__link" href="Contact-us.html">Contact us</a></li>
+            </ul>    
+        </div>
+
+        
+        <div class="col sm-3-footr1">
+            <h3>Services</h3>
+            <ul class="footr-nav-links">
+                <li><a class="footer__link" href="About-us.html">SEO</a></li>
+                <li><a class="footer__link" href="About-us.html">Email Marketing</a></li>
+                <li><a class="footer__link" href="About-us.html">Web Development</a></li>
+                <li><a class="footer__link" href="About-us.html">Social Media Marketing</a></li>
+            </ul>
+        </div>
+
+
+        
+            <div class="col" style="border-left: #E5E4E2 solid;">
+                <label>Subscribe to our Newsletter</label>
+
+                <form class="subscribe-form">
+                
+                    <input type="email" id="emailAddress" class="form-control" placeholder="Enter your email address">
+                    
+
+                        <div class="emailFormatMsg">Email must be formatted correctly.</div>
+                        <button id="emailBtn" class="btn btn-light">Subscribe</button>
+                </form>
+                <div class="confirmationMsg">Thanks for the subscription!</div>
+            </div>
+        
+
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+</script>
+
+<script>
+    let subscribeInput:any = document.querySelector("#emailAddress");
+let subscribeBtn:any = document.querySelector("#emailBtn");
+let confirmationMsg:any = document.querySelector(".confirmationMsg");
+let subForm:any = document.querySelector(".subscribe-form");
+let email_Invalid_Msg:any = document.querySelector(".emailFormatMsg");
+
+function isValidEmail(email:any) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+subscribeBtn.addEventListener('click', function(e:any){
+  e.preventDefault();
+  let email = subscribeInput.value.trim();  
+  if(email !== " " && isValidEmail(email)){
+    console.log(email);
+    subForm.style.display = 'none';
+    confirmationMsg.style.display = 'block';
+  }else{
+    subscribeInput.style.border = 'solid red';
+    email_Invalid_Msg.style.visibility = "visible";
+  } 
+})
+
+
+</script>
