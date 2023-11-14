@@ -135,12 +135,12 @@
 
 /* This the default css for all the associate pages */
 .service-sec1{
-  margin-top: 90px;
+  margin-top: -2px;
   height: 500px;
   /* padding-top: 300px; */
   background-color: #1c1235;
   color: white;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 /* .index-sec2{
@@ -224,7 +224,7 @@
 /* ABOUT US CSS */
 
 .aboutUs-sec1{
-  margin-top: 90px;
+  /* margin-top: -1px; */
   height: 500px;
   padding-top: 300px;
   background-color: #1c1235;
